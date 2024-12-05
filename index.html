@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Absensi OSIS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Form Absensi OSIS</h1>
+        <form action="simpan_absensi.php" method="POST" class="form-absensi">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required placeholder="Masukkan Nama">
+
+            <label for="kelas">Kelas:</label>
+            <input type="text" id="kelas" name="kelas" required placeholder="Masukkan Kelas">
+
+            <label for="divisi">Divisi:</label>
+            <select id="divisi" name="divisi" required>
+                <option value="">Pilih Divisi</option>
+                <option value="Divisi A">Evaluasi & Pengembangan</option>
+                <option value="Divisi B">Humas & Sponsorship</option>
+                <option value="Divisi C">Keamananan & Kebersihan</option>
+                <option value="Divisi D">Danus & Keuangan</option>
+                 <option value="Divisi D">Media & Dokumentasi</option>
+                  <option value="Divisi D">Keimanan & Ketaqwaan</option>
+            </select>
+
+            <button type="submit">Kirim Absensi</button>
+        </form>
+    </div>
+</body>
+</html>
